@@ -22,9 +22,9 @@ from flask import Flask, request, jsonify
 from transformers import pipeline
 
 app = Flask(__name__)
+MODEL_PATH = "Complaint"
 
-
-classifier = pipeline("text-classification", model="../Complaint", tokenizer="../Complaint")
+classifier = pipeline("text-classification", model=MODEL_PATH, tokenizer=MODEL_PATH)
 label_map = {
     "LABEL_0": "Road",
     "LABEL_1": "Sanitation",
