@@ -24,7 +24,7 @@ from transformers import pipeline
 app = Flask(__name__)
 
 
-classifier = pipeline("text-classification", model="./Complaint", tokenizer="./Complaint")
+classifier = pipeline("text-classification", model="../Complaint", tokenizer="../Complaint")
 label_map = {
     "LABEL_0": "Road",
     "LABEL_1": "Sanitation",
