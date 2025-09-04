@@ -3,8 +3,8 @@ from transformers import pipeline
 
 classifier = pipeline(
     task="text-classification",
-    model=r"D:\Complaint",
-    tokenizer=r"D:\Complaint"
+    model=r"/Complaint",
+    tokenizer=r"/Complaint"
 )
 
 label_map = {
